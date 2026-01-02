@@ -4,7 +4,6 @@ A chess behavior debugger for players stuck on Lichess ratings.
 
 > Triggered Queens helps chess players break rating stagnation by identifying recurring mistake patterns across games and prescribing habit-level fixes, not generic engine advice.
 
-------------
 
 
 
@@ -17,7 +16,6 @@ The issue is not lack of knowledge, it is repeated, unconscious mistakes that go
 Stockfish explains what went wrong in a single game, but not why the same mistake keeps happening across many games.
 
 
-------------
 
 
 
@@ -27,9 +25,6 @@ Build a minimal product that:
 	•	Detects recurring mistake patterns across a player’s recent Lichess games
 	•	Diagnoses why a player is plateaued
 	•	Prescribes one focused corrective constraint at a time
-
-
-------------
 
 
 
@@ -46,11 +41,6 @@ Build a minimal product that:
  - Time control
  - Rating change
 
-
-------------
-
-
-
 ### Engine-Assisted Mistake Extraction
 
 Using Stockfish (offline or containerized):
@@ -66,11 +56,6 @@ Using Stockfish (offline or containerized):
 
 ⚠️ Full per-move analysis is intentionally avoided to keep compute low.
 
-
-------------
-
-
-
 ### Recurring Mistake Pattern Detection
 
 Aggregate mistakes across games to identify repeating habits, such as:
@@ -85,10 +70,6 @@ Output:
 - Average eval loss per category
 
 
-------------
-
-
-
 ### Plateau Diagnosis Report
 
 Generate a short diagnostic summary:
@@ -101,10 +82,6 @@ Includes:
 - Win/Loss phase breakdown
 - Blunder frequency by game phase
 - Time trouble correlation
-
-
-------------
-
 
 
 ### Constraint-Based Fix (The Core Feature)
@@ -123,10 +100,6 @@ Track:
 - Blunder rate change
 
 
-------------
-
-
-
 ## 🧩 Non-Goals (Intentionally Excluded)
 - Real-time engine assistance (fair play risk)
 - Opening databases / theory trees
@@ -134,9 +107,6 @@ Track:
 - Full coaching automation
 
 This MVP focuses only on breaking rating plateaus.
-
-
-------------
 
 
 
@@ -156,17 +126,11 @@ APIs
 - Lichess API (game export, user profile)
 
 
-------------
-
 
 ## 🧪 MVP Success Criteria
 - Identifies at least 2 recurring mistake patterns for a user
 - Produces a clear plateau diagnosis users agree with
 - Constraint compliance correlates with improved results
-
-
-------------
-
 
 
 ## 🗺️ Milestones
@@ -188,10 +152,6 @@ Phase 4 – Reporting
 - Constraint assignment
 
 
-------------
-
-
-
 ### 🧠 Future Extensions
 - Weekly plateau-exit programs
 - Benchmarking vs higher rating bands
@@ -199,17 +159,10 @@ Phase 4 – Reporting
 - Mobile companion app
 
 
-------------
-
-
-
 ### 📌 Ethics & Fair Play
 - All analysis occurs post-game only
 - No engine assistance during live play
 - Fully compliant with Lichess fair play guidelines
-
-
-------------
 
 
 
@@ -219,9 +172,6 @@ Phase 4 – Reporting
 - Players seeking structured improvement, not more theory
 
 
-------------
-
-
 
 ### ✨ Why This Exists
 
@@ -229,7 +179,5 @@ Chess improvement tools optimize for information.
 
 Triggered Queens optimizes for behavior change.
 
-
-------------
 
 
